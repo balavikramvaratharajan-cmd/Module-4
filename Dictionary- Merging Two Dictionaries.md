@@ -1,33 +1,33 @@
-# Classes and Objects in Python: Calculate the Area of a Circle
+# Exception Handling in Python: Avoiding Index Errors
 
 ## 🎯 Aim
-To write a Python program that calculates the **area of a circle** based on the radius provided by the user. This program uses a class named `cse` and a method `mech` to perform the calculation.
+To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list.
 
 ## 🧠 Algorithm
-1. **Get user input**: Take the radius of the circle as input from the user.
-2. **Define the class**: Create a class named `cse`.
-3. **Define the method**: Inside the class, define the method `mech` to calculate the area of the circle using the formula:  
-   Area = pi *r^2 
-4. **Execute the program**: Create an object of the class and call the method with the radius value.
+1. Define a list `list1` with some integer elements.
+2. Use a **try-except** block:
+   - In the `try` block, attempt to access an index that is out of range (e.g., `list1[5]`).
+   - In the `except` block, catch the error and print a custom message `"You're out of list range"`.
+3. Print the result based on whether the index access succeeds or fails.
 
 ## 🧾 Program
 ```
-import math
+try:
+    # Taking 3 elements input from the user
+    L = []
+    for i in range(3):
+        item = ['laptop','mobile','pen']
+        L.append(item)
 
-class cse:
-    def mech(self, radius):
-        area = math.pi * radius ** 2
-        print(f"Area of circle: {area:.2f}")
+    # Trying to access index 4
+    print(L[4])
 
-
-r = float(input())
-
-
-obj = cse()
-obj.mech(r)
+except IndexError:
+    print("check index range")
 ```
+
 ## Output
-<img width="788" height="190" alt="image" src="https://github.com/user-attachments/assets/49da7223-08e9-4dbc-9654-be5465e9b598" />
+<img width="702" height="195" alt="image" src="https://github.com/user-attachments/assets/2b52ccfa-a1b3-4c6e-91c4-39459023b14b" />
 
 ## Result
 Thus the program executed successfully.
