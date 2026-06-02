@@ -1,31 +1,16 @@
-# File Handling in Python: Count Lines Not Starting with 'T'
+[Infosys ] Write a Python program to read a file and count the frequency of each character in it.
+For example:
 
-## 🎯 Aim
-To write a Python program that counts the number of lines in a text file `story.txt` that do **not** start with the alphabet `'T'`.
-
-## 🧠 Algorithm
-1. Open the file `story.txt` in **read mode**.
-2. Initialize a counter `count` to zero.
-3. Iterate through each line of the file:
-   - Check if the first character of the line is **not** `'T'`.
-   - If the line does not start with `'T'`, increment the `count` by 1.
-4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
-
-## 🧾 Program
-```
-def returnSum(myDict):
-    final=0
-    for i in myDict.values():
-        final+=i
-    return final
-#driver functions
-
-myDict = {'a': 100, 'b': 200, 'c': 300}
-print("Sum :",returnSum(myDict))
-```
-
-## Output
-<img width="486" height="221" alt="image" src="https://github.com/user-attachments/assets/a6587da4-bbfc-44d4-892e-401d6f160395" />
-
-## Result
-Thus,the program has been executed successfully.
+Test	Input	Result
+file_path = 'example.txt'
+file_content = input()
+create_file(file_path, file_content)
+print("Character frequencies:", char_frequency(file_path))
+saveetha engineering college
+Character frequencies: defaultdict(<class 'int'>, {'s': 1, 'a': 2, 'v': 1, 'e': 7, 't': 1, 'h': 1, ' ': 2, 'n': 3, 'g': 3, 'i': 2, 'r': 1, 'c': 1, 'o': 1, 'l': 2})
+file_path = 'example.txt'
+file_content = input()
+create_file(file_path, file_content)
+print("Character frequencies:", char_frequency(file_path))
+computer science engineering
+Character frequencies: defaultdict(<class 'int'>, {'c': 3, 'o': 1, 'm': 1, 'p': 1, 'u': 1, 't': 1, 'e': 6, 'r': 2, ' ': 2, 's': 1, 'i': 3, 'n': 4, 'g': 2})
